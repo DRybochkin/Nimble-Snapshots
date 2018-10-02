@@ -16,6 +16,8 @@ Pod::Spec.new do |s|
   s.default_subspec = "Core"
   s.frameworks  = "Foundation", "XCTest", "UIKit"
 
+  s.swift_version = '4.2'
+
   s.subspec "Core" do |ss|
     ss.source_files  = "*.{h,m,swift}", "DynamicType/*.{swift,m,h}", "DynamicSize/*.{swift}"
     ss.dependency "iOSSnapshotTestCase", "~> 4.0"
